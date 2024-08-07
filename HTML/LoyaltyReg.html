@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#317EFB">
+        <meta
+        name="description"
+        content="Discover Fresh Glow Grocery, your go-to destination for fresh produce, quality groceries, and everyday essentials. Shop now for a convenient and delightful grocery shopping experience.">
+        <title>Loyalty Registration</title>
+        <link rel="stylesheet" href="../CSS/General.css">
+        <link rel="stylesheet" href="../CSS/LoyaltyReg.css">
+        <link rel="stylesheet" href="../CSS/Dark-Theme.css" id="change-theme">
+        <link rel="manifest" href="../manifest.json">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://web.facebook.com">
+        <link rel="preconnect" href="https://x.com">
+        <link rel="preconnect" href="https://www.instagram.com">
+        <link rel="preconnect" href="https://mail.google.com">
+        
+    </head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="../index.html" aria-label="Grocery Store logo"><img src="../Icons/logo.webp" alt=""></a>
+            <p>Fresh Glow Grocery</p>
+        </div>
+        <div class="header-middle">
+            <nav>
+                <div class="nav-section home       "><a href="../index.html">HOME</a></div>
+                <div class="nav-section aboutUs    "><a href="AboutUs.html">ABOUT US</a></div>
+                <div class="nav-section dairy      "><a href="Dairy.html">DAIRY</a></div>
+                <div class="nav-section vegetables "><a href="Vegetables.html">VEGETABLES</a></div>
+                <div class="nav-section cosmetics  "><a href="Cosmetics.html">COSMETICS & SKIN CARE</a></div>
+                <div class="nav-section items      "><a href="items.html">ITEMS</a></div>
+                <div class="nav-section orders     "><a href="Orders.html">ORDER</a></div>
+                <div class="nav-section loyaltyReg "><a href="LoyaltyReg.html">LOYALTY REGISTRATION</a></div>
+                
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="theme-icon">
+                <input type="checkbox" id="theme">
+                <label for="theme"><img src="../Icons/sun.png" alt="" class="theme-img"></label>
+            </div>
+            <div class="header-icon">
+                <img src="../Icons/cart-shopping-svgrepo-com.svg" alt="">
+            </div>
+
+            <!-- MOBILE VIEW NAV BAR AYYOOOO -->
+            <input type="checkbox" id="ham">
+            <label style="cursor: pointer;" class="hamberger" for="ham"></label>
+
+            <div class="mobile-menu" for="ham">
+                <div class="nav-section"><a href="../index.html">HOME</a></div>
+                <div class="nav-section"><a href="AboutUs.html">ABOUT US</a></div>
+                <div class="nav-section"><a href="Dairy.html">DAIRY</a></div>
+                <div class="nav-section"><a href="Vegetables.html">VEGETABLES</a></div>
+                <div class="nav-section"><a href="Cosmetics.html">COSMETICS & SKIN CARE</a></div>
+                <div class="nav-section"><a href="items.html">ITEMS</a></div>
+                <div class="nav-section"><a href="Orders.html">ORDER</a></div>
+                <div class="nav-section"><a href="LoyaltyReg.html">LOYALTY REGISTRATION</a></div>
+            </div>
+            <!-- <div>
+                <img src="../Icons/account-svgrepo-com.svg" alt="">
+            </div> -->
+        </div>
+    </header>
+    
+
+    <main class="main-grid">
+
+        <div class="order-items">
+            <h1>BENEFITS OF EACH LOYALTY SCHEME</h1>
+
+            <div>
+                <h2><span class="star-rotate">&#11088;</span> Platinum Card</h2>
+                <ul>
+                    <li>&#127919; VIP treatment with personalized concierge services</li>
+                    <li>&#127919; Priority access to exclusive events</li>
+                    <li>&#127919; Dedicated account manager for tailored assistance</li>
+                    <li>&#127919; Complimentary gift packages and luxury rewards</li>
+                    <li>&#127919; Invitations to exclusive VIP experiences and product launches</li>
+                </ul>
+    
+    
+                <h2><span class="star-rotate">&#11088;</span> Gold Card</h2>
+                <ul>
+                    <li>&#127919; Personalized customer service</li>
+                    <li>&#127919; Priority assistance at checkout</li>
+                    <li>&#127919; Access to dedicated support channels</li>
+                    <li>&#127919; Early access to new product launches</li>
+                    <li>&#127919; Invitations to exclusive events</li>
+                </ul>
+                
+    
+    
+                <h2><span class="star-rotate">&#11088;</span> Silver Card</h2>
+                <ul>
+                    <li>&#127919; Attentive customer service</li>
+                    <li>&#127919; Assistance with product recommendations</li>
+                    <li>&#127919; Access to special promotions and events</li>
+                    <li>&#127919; Personalized shopping experiences</li>
+                    <li>&#127919; Exclusive offers to enhance loyalty and satisfaction</li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+
+        <div class="form-container">
+            <form>
+                <div class="grid">
+
+                    <div> <h2>REGISTRATION</h2></div>
+                    
+                    <div class="name-section">
+                        
+                            <div class="label-class">
+                                <label for="first-name" >FIRST NAME</label>
+                                <input type="text" placeholder="Eg: Dulneth" id="first-name" required>
+                            </div>
+            
+            
+                            <div class="label-class">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" placeholder="Eg: Jayathilake" id="last-name" required>
+                            </div>
+            
+                    </div>
+
+                    <div class="name-section">
+    
+                        <div class="label-class">
+                            <label for="mail">EMAIL ID</label>
+                            <input type="email" placeholder="Eg: EmailID@gmail.com" id="mail" required>
+                        </div>
+        
+        
+                        <div class="label-class">
+                            <label for="tel-no">MOBILE NUMBER</label>
+                            <input type="tel" maxlength="10" placeholder="XXXXXXXXXX" id="tel-no" required>
+                        </div>
+            
+                    </div>
+
+                        <div class="label-class" id="address-label">
+                            <label for="address">ADDRESS</label>
+                            <input type="text" placeholder="Eg: 123, Galle Road, Colombo 03" id="address" required>
+                        </div>
+        
+                        <div class="location-section">
+                                                
+                            <div class="label-class">
+                                <label for="city" >CITY</label>
+                                <input type="text" placeholder="Eg: Colombo" id="city" required>
+                            </div>
+
+
+                            <div class="label-class">
+                                <label for="district">DISTRICT</label>
+                                <input type="text" placeholder="Eg: Kollupitiya" id="district" required>
+                            </div>
+
+                            <div class="label-class">
+                                <label for="zip">ZIP</label>
+                                <input type="text" placeholder="Eg: 00300" id="zip" required>
+                            </div>
+                        </div>
+        
+        
+
+
+                        <label>Loyalty Scheme</label>
+                        <div class="loyalty-section">
+                            
+                            <div class="img-card " >
+                                <input type="radio" id="img1" class="radio-img" name="image">
+                                <label for="img1">
+                                    <img class="card1" src="../Images/LoyaltyReg-pg/silver-card-front.webp" alt="">
+                                    <span class="checkmark">&#10003;</span>
+                                </label>
+                                
+                                <p>Silver Card</p>
+                            </div>
+                        
+                            <div class="img-card ">
+                                <input type="radio" id="img2" class="radio-img" name="image">
+                                <label for="img2">
+                                    <img id="gold-card" class="card2" src="../Images/LoyaltyReg-pg/gold-card-back.webp" alt="">
+                                    <span class="checkmark">&#10003;</span>
+                                </label>
+                                <p>Gold Card</p>
+                            </div>
+                        
+                            <div class="img-card ">
+                                <input type="radio" id="img3" class="radio-img" name="image">
+                                <label for="img3">
+                                    <img class="card3" src="../Images/LoyaltyReg-pg/platinum-card-behind.webp" alt="">
+                                    <span class="checkmark">&#10003;</span>
+                                </label>
+                                <p>Platinum Card</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="submit-btn-container">
+                            <button class="submit-btn"><input type="submit" value="SUBMIT"></button>
+                        </div>
+         
+                </div>
+    
+                
+        
+            </form>
+        </div>
+
+        
+    </main>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-left">
+            <div><p>FreshGlow@gmail.com</p></div>
+            <div><p>+94 0123456789</p></div>
+            <div><p>Sri Lanka, Colombo 7, Liberty</p></div>
+            
+            
+        </div>
+        <div>
+           <p>&copy; 2024 <span>Fresh Glow Grocery</span>. All rights reserved</p> 
+        </div>
+        <div class="footer-right">
+
+            <div class="social-media-icons"><img id="facebook-icon" src="../Icons/facebook.svg" alt=""></div>
+            <div class="social-media-icons"><img src="../Icons/twitter.svg" alt=""></div>
+            <div class="social-media-icons"><img src="../Icons/instagram.svg" alt=""></div>
+            <div class="social-media-icons"><img src="../Icons/google.svg" alt=""></div>
+            
+            
+
+        </div>
+
+    </footer>
+
+    <script src="../Scripts/Theme-changer.js"></script>
+</body>
+</html>

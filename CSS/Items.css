@@ -1,0 +1,77 @@
+h1{
+    text-align: center;
+}
+
+input[type=number]{
+    text-align: center;
+}
+
+
+table{
+    margin: 30px;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #455A64;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+th{
+    font-size: x-large;
+    /* color: black; */
+    padding: 8px; 
+    border: 1px solid #ddd;
+    background-color: #37474F;
+    color: #81D4FA;
+    font-weight: 400;
+
+}
+
+td{
+    color: #ddd;
+    padding: 8px; 
+    border: 1px solid #ddd;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #263238;
+}
+
+table tbody{
+    animation: fadeInSlideUp 1.5s ease-in-out;
+}
+
+.fade-in-row {
+    animation: fadeInRow 1s ease-in-out; /* Adjust duration and timing function as needed */
+}
+
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+
+#save-cart-btn{
+    height: 50px;
+    width: 150px;
+    border-color: none;
+    /* border-radius: 15px; */
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+.product-table{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    justify-content: right;
+}

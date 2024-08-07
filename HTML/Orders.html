@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#317EFB">
+        <meta
+        name="description"
+        content="Discover Fresh Glow Grocery, your go-to destination for fresh produce, quality groceries, and everyday essentials. Shop now for a convenient and delightful grocery shopping experience.">
+        <title>Orders</title>
+        <link rel="stylesheet" href="../CSS/General.css">
+        <link rel="stylesheet" href="../CSS/Orders.css">
+        <link rel="stylesheet" href="../CSS/Dark-Theme.css" id="change-theme">
+        <link rel="manifest" href="../manifest.json">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://web.facebook.com">
+        <link rel="preconnect" href="https://x.com">
+        <link rel="preconnect" href="https://www.instagram.com">
+        <link rel="preconnect" href="https://mail.google.com">
+        
+    </head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="../index.html"><img src="../Icons/logo.webp" alt=""></a>
+            <p>Fresh Glow Grocery</p>
+        </div>
+        <div class="header-middle">
+            <nav>
+                <div class="nav-section home       "><a href="../index.html">HOME</a></div>
+                <div class="nav-section aboutUs    "><a href="AboutUs.html">ABOUT US</a></div>
+                <div class="nav-section dairy      "><a href="Dairy.html">DAIRY</a></div>
+                <div class="nav-section vegetables "><a href="Vegetables.html">VEGETABLES</a></div>
+                <div class="nav-section cosmetics  "><a href="Cosmetics.html">COSMETICS & SKIN CARE</a></div>
+                <div class="nav-section items      "><a href="items.html">ITEMS</a></div>
+                <div class="nav-section orders     "><a href="Orders.html">ORDER</a></div>
+                <div class="nav-section loyaltyReg "><a href="LoyaltyReg.html">LOYALTY REGISTRATION</a></div>
+                
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="theme-icon">
+                <input type="checkbox" id="theme">
+                <label for="theme"><img src="../Icons/sun.png" alt="" class="theme-img"></label>
+            </div>
+            <div class="header-icon">
+                <img src="../Icons/cart-shopping-svgrepo-com.svg" alt="">
+            </div>
+
+            <!-- MOBILE VIEW NAV BAR AYYOOOO -->
+            <input type="checkbox" id="ham">
+            <label style="cursor: pointer;" class="hamberger" for="ham"></label>
+
+            <div class="mobile-menu">
+                <div class="nav-section"><a href="../index.html">HOME</a></div>
+                <div class="nav-section"><a href="AboutUs.html">ABOUT US</a></div>
+                <div class="nav-section"><a href="Dairy.html">DAIRY</a></div>
+                <div class="nav-section"><a href="Vegetables.html">VEGETABLES</a></div>
+                <div class="nav-section"><a href="Cosmetics.html">COSMETICS & SKIN CARE</a></div>
+                <div class="nav-section"><a href="items.html">ITEMS</a></div>
+                <div class="nav-section"><a href="Orders.html">ORDER</a></div>
+                <div class="nav-section"><a href="LoyaltyReg.html">LOYALTY REGISTRATION</a></div>
+            </div>
+            <!-- <div>
+                <img src="../Icons/account-svgrepo-com.svg" alt="">
+            </div> -->
+        </div>
+    </header>
+    
+
+    <main class="main-grid">
+
+        <div class="order-items">
+            <h2>ORDER ITEMS</h2>
+
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody id="product-items-tbody">
+                    <!-- Cart items will be displayed here -->
+                </tbody>
+            </table>
+
+
+            <button class="submit-btn add-to-fav-btn">Add to Favourite</button>
+            <button class="submit-btn apply-fav-btn">Apply Favourite</button>
+        </div>
+
+
+        <div class="form-container">
+            <form>
+                <div class="grid">
+
+                    <div> <h2>Shipping Details</h2></div>
+                    
+                    <div class="name-section">
+                        
+                            <div class="label-class">
+                                <label for="first-name" >FIRST NAME</label>
+                                <input type="text" placeholder="Eg: Dulneth" id="first-name" required>
+                            </div>
+            
+            
+                            <div class="label-class">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" placeholder="Eg: Jayathilake" id="last-name" required>
+                            </div>
+            
+                    </div>
+
+                    <div class="name-section">
+    
+                        <div class="label-class">
+                            <label>EMAIL ID</label>
+                            <input type="email" placeholder="Eg: EmailID@gmail.com" required>
+                        </div>
+        
+        
+                        <div class="label-class">
+                            <label >MOBILE NUMBER</label>
+                            <input type="number" maxlength="10" placeholder="XXXXXXXXXX" required>
+                        </div>
+            
+                    </div>
+
+                        <div class="label-class" id="address-label">
+                            <label>ADDRESS</label>
+                            <input type="text" placeholder="Eg: 123, Galle Road, Colombo 03" required>
+                        </div>
+        
+                        <div class="location-section">
+                                                
+                            <div class="label-class">
+                                <label for="first-name" >CITY</label>
+                                <input type="text" placeholder="Eg: Colombo" id="first-name" required>
+                            </div>
+
+
+                            <div class="label-class">
+                                <label for="last-name">DISTRICT</label>
+                                <input type="text" placeholder="Eg: Kollupitiya" id="last-name" required>
+                            </div>
+
+                            <div class="label-class">
+                                <label for="last-name">ZIP</label>
+                                <input type="text" placeholder="Eg: 00300" id="last-name" required>
+                            </div>
+                        </div>
+        
+        
+                        
+
+                        <div class="label-class">
+                            <label for="loyalty-scheme">Loyalty Scheme</label>
+                        </div>
+                        <div>
+                            <select  id="loyalty-scheme">
+                                <option value="Silver">None</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Platinum">Platinum</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h2>Payment Information</h2>
+                        </div>
+
+                        <div>
+                            <label for="Credit-No">Credit Card NO.</label>
+                            <input type="text" id="Credit-No" placeholder="XXXXXXXXXX" required>
+                           
+                        </div>
+
+                        <div class="name-section">
+    
+                        <div class="label-class">
+                            <label >EXP</label>
+                            <!-- <input type="date" placeholder="" required> -->
+                            <input type="month" placeholder="test" aria-placeholder="helo" required>
+                        </div>
+        
+        
+                        <div class="label-class">
+                            <label>CCV</label>
+                            <input type="number" maxlength="6" placeholder="XXXXXX" required>
+                        </div>
+            
+                    </div>
+
+
+
+                        <div class="submit-btn-container">
+                            <button class="submit-btn pay-btn"><input type="submit" value="Pay"></button>
+                        </div>
+         
+                </div>
+    
+                
+        
+            </form>
+        </div>
+
+        
+    </main>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-left">
+            <div><p>FreshGlow@gmail.com</p></div>
+            <div><p>+94 0123456789</p></div>
+            <div><p>Sri Lanka, Colombo 7, Liberty</p></div>
+            
+            
+        </div>
+        <div>
+           <p>&copy; 2024 <span>Fresh Glow Grocery</span>. All rights reserved</p> 
+        </div>
+        <div class="footer-right">
+
+            <div class="social-media-icons"><img id="facebook-icon" src="../Icons/facebook.svg" alt=""></div>
+            <div class="social-media-icons"><img src="../Icons/twitter.svg" alt=""></div>
+            <div class="social-media-icons"><img src="../Icons/instagram.svg" alt=""></div>
+            <div class="social-media-icons"><img src="../Icons/google.svg" alt=""></div>
+            
+            
+
+        </div>
+
+    </footer>
+
+    <script defer src="../Scripts/Product_Order.js"></script>
+</body>
+</html>

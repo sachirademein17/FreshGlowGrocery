@@ -1,0 +1,261 @@
+/* ======================== DIVIDING THE MAIN CONTENT IN TO TOW ========================== */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.order-items{
+    display: flex;
+    flex-direction: column;
+    /* margin: 50px; */
+}
+
+.order-items div{
+    display: grid;
+    justify-content: center;
+}
+
+
+.order-items h1{
+    text-align: center;
+}
+
+.order-items h2{
+    margin-bottom: 0px;
+}
+
+.order-items li{
+    list-style-type: none;
+    font-size: larger;
+}
+
+
+/* =================================== SECOND COLUMN =================================== */
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* Tickle */
+form{
+    padding: 50px;
+    margin: 10px; 
+    /* background-color: #00BFFF; */
+    /* background-color: #F0F4C3; */
+    /* border-radius: 10px; */
+    /* color: #555555; */
+    /* background-color: #cbf3f0; */
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.grid h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.label-class{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.location-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select{
+    border: none;
+    /* box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3); */
+    
+    width: 100%;
+    height: 30px;
+    /* border-radius: 5px; */
+    outline: none;
+    font-family: "Open Sans";
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+
+input::placeholder, input[type="text"]{
+    padding-left: 5px;
+}
+
+input::target-text{
+    padding-left: 10px;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.submit-btn-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: right;
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-between
+}
+
+.img-card label{
+    display: inline-block;
+    height: 200px;
+}
+
+img{
+    height: 100%;
+}
+
+.img-card{
+    flex: 1;
+}
+
+.img-card input{
+    /* display: none; */
+}
+
+/* .img-card input:checked{
+    content: url;
+} */
+
+
+
+/* Hide the actual radio button */
+.radio-img {
+    display: none;
+}
+
+/* Style the label to be relative positioned to accommodate the checkmark */
+.img-card label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: green;
+    display: none;
+}
+
+.radio-img:checked + label .checkmark {
+    display: block;
+}
+
+label img {
+    display: block;
+    width: 100%;
+}
+
+.img-card {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+
+input[type=submit]{
+    border: none 0px;
+    height: 40px;
+    width: 100px;
+    /* border-radius: 0px 10px; */
+
+}
+
+
+.loyalty-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .card1{ */
+    /* transition: all 10s; */
+/* } */
+/*  */
+/* .card1:hover{ */
+    /* content: url('../Images/LoyaltyReg-pg/silver-card-behind.jpeg');  */
+    /*  */
+/* } */
+/*  */
+/* .card2:hover{ */
+/* content: url('../Images/LoyaltyReg-pg/gold-card-front.jpeg'); Change the image src on hover */
+/* } */
+/*  */
+/* .card3:hover{ */
+/* content: url('../Images/LoyaltyReg-pg/platinum-card-front.jpeg'); Change the image src on hover */
+/* } */ 
+
+
+
+
+
+@media screen and (max-width: 1500px){
+ 
+    .main-grid{
+        grid-template-columns: 1fr;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 500px){
+    .header-middle {
+        display: none;
+    }
+
+    .order-items li {
+        font-size: 13px;
+    }
+
+    .name-section, .location-section {
+        grid-template-columns: 1fr;
+    }
+
+    .loyalty-section {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+
+
+.star-rotate {
+    display: inline-block; 
+    animation: rotateStar 2s  infinite;
+}
+
+@keyframes rotateStar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+

@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+
+/* ================    GENERAL CSS STYLING     ====================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.home a:hover,
+.aboutUs a:hover,
+.dairy a:hover,
+.vegetables a:hover,
+.cosmetics a:hover,
+.items a:hover,
+.orders a:hover,
+.loyaltyReg a:hover {
+    box-shadow: 0px 4px 0px #B3E5FC;
+    color: #B3E5FC;
+}
+
+.header-middle nav div a {
+    color: #81D4FA;
+    font-family: Rubik;
+}
+
+.headline-card {
+    background-color: #1E1E1E;
+}
+
+
+
+.header-left p {
+    color: #81D4FA;
+}
+
+form {
+    padding: 50px;
+    margin: 10px; 
+    background-color: #263238;
+}
+
+
+
+
+
+*{
+    transition: all .5s;
+}
+
+
+body{
+    margin: 70px 0px 0px 0px;
+    background-color: #121212;    
+}
+
+p, li, a{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0px;
+    font-family: Lato, "Open Sans";
+    color: #E0E0E0;
+}
+
+h1{
+    font-size: 35px;
+    font-family: Montserrat, Raleway;
+    color: #81D4FA;
+}
+
+h2,h3{
+    margin-top: 0px;
+    font-family: Montserrat, Raleway;
+    color: #81D4FA;
+}
+
+button{
+    background-color: #0288D1;
+    color: #FFFFFF;
+}
+
+button:hover{
+    background-color: #0277BD;
+
+}
+
+label{
+    font-weight: bolder;
+    font-family: Lato, "Open Sans";
+    color: #E0E0E0;
+}
+
+
+
+/*  ===========================   HEADER SECTION ======================== */
+
+header{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #37474F; 
+    z-index: 200;
+}
+
+.header-left{
+    display: flex;
+    width: 250px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header-left p{
+    margin-left: 15px;
+    color: #01579B;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-left img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.header-left a {
+    display: flex;
+    align-items: center;
+}
+
+.header-middle{
+    flex: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.header-right{
+    display: flex;
+    width: 250px;
+    justify-content: right;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.nav-section{
+    display: inline-flex;
+    height: 70px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* NAV SECTION HOVER EFFECT */
+
+.home a,
+.aboutUs a,
+.dairy a,
+.vegetables a,
+.cosmetics a,
+.items a,
+.orders a,
+.loyaltyReg a {
+    transition: all 0.5s;
+}
+
+
+.header-middle nav div a{
+    font-size: 15px;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+.header-right .header-icon{
+    background-color: white;
+    height: 25px;
+    border: 10px white solid;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+
+.theme-icon{
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.header-right img{
+    margin-bottom: 2px;
+}
+
+.header-right img, .theme-icon img{
+    height: 100%;
+}
+
+
+
+/* ==========================  CARD INSIDE THE MAIN IMG  ======================= */
+
+.main-img{
+    z-index: 10;
+    position: relative;
+}
+
+.main-img img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: -4px;
+}
+
+.main-content{
+    position: absolute;
+    top: 40px;
+    right: 180px;
+    width: 700px;
+    min-width: 400px;
+}
+
+.adding-Bullet{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 4px;
+
+}
+
+
+.headline-card{
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+
+.headline-card:hover{
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.main-img h1{
+    font-size: 40px;
+    margin: 0px;
+}
+
+
+
+/* ========================   PRODUCT CARD STYLING  ============================= */
+
+.card{
+    background-color: #37474F;
+    margin: 40px;
+    max-width: 250px;
+    flex-direction: row;
+    display: inline-block;
+    padding-bottom: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card .item-img{
+    width: 100%;
+    height: 100%;
+    transition: .5s all;
+}
+
+.card .item-img:hover{
+    width: 118%;
+    height: 118%;
+}
+
+.card p,select{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.card select{
+    width: 50px;
+    height: 25px;
+    border: none;
+    padding-left: 7px;
+    border-radius: 5px;
+    background-color: rgb(2, 136, 209);
+    color: #FFFFFF;
+}
+
+.card select option{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+
+.last-row{
+    display: flex;
+    justify-content: center;
+}
+
+.last-row button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    transition: 1.5s all;
+    cursor: pointer;
+}
+
+.last-row button:hover{
+    border-radius: 20px;
+}
+
+.last-row button img{
+    height: 25px;
+    width: 55px;
+    display: flex;
+    width: 40px;
+        
+}
+
+.last-row button p{
+    display: flex;
+    font-size: 15px;
+    margin: 0px 6px 0px 6px;
+    color: #FFFFFF;
+    flex: 1;
+
+    
+}
+
+
+
+
+
+
+/* =========================== MOBILE VIEW NAV BAR  ========================== */
+
+
+.hamberger{ 
+    height: 5px;
+    width: 40px;
+    position: relative;
+    background-color: #81D4FA;
+    z-index: 999;
+    border-radius: 10px;
+    display: none;
+}
+
+
+.hamberger::after,
+.hamberger::before{
+    content: "";
+    background-color: #81D4FA;
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    right: 0px;
+    border-radius: 10px;
+}
+
+.hamberger::after{
+    top: 13px;
+}
+
+.hamberger::before{
+    top: -13px;
+}
+
+#ham:checked + .hamberger{
+    background-color: transparent;
+}
+
+#ham:checked + .hamberger::after{
+    transform: rotate(45deg);
+    width: 40px;
+    top: 0px;
+    transition: 0.5s;
+}
+
+#ham:checked + .hamberger::before{
+    transform: rotate(-45deg);
+    width: 40px;
+    top: 0px;
+    transition: 0.5s;
+}
+
+#ham{
+    display: none;
+}
+
+
+
+.mobile-menu {
+    position: fixed;
+    top: 70px;
+    right: -100%; 
+    width: 200px; 
+    background-color: #37474F;
+    height: 100%; 
+    padding: 15px;
+    transition: right 1s ease; 
+    z-index: 990;
+    display: none;
+}
+
+#ham:checked ~ .mobile-menu {
+    right: 0px;
+}
+
+.mobile-menu a{
+    font-size: 15px;
+    padding: 20px 0px 20px 0px;
+    color: #81D4FA;
+    text-decoration: none;
+}
+
+
+
+
+
+/* ======================= FOOTER SECTION ======================== */
+
+footer{
+    display: grid;
+    grid-template-columns: 300px 1fr 300px ;
+    background-color: #37474F; 
+    height: 100px;
+}
+
+footer p{
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-left{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-middle{
+    text-align: center;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+footer div img {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
+
+
+.social-media-icons {
+    height: 30px;
+    border: solid white 8px;
+    border-radius: 50%;
+    transition: transform 1s;
+}
+
+.social-media-icons:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+
+input[type=number]{
+    margin-left: 10px;
+    width: 50px;
+}
+
+/* THEME CHANGER */
+
+input[type=checkbox]{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1440px){
+ 
+    p, li{
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin: 0px;
+    }
+
+
+    .main-img h1{
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    .main-content{
+        position: absolute;
+        top: 110px;
+        right: 90px;
+        width: 700px;
+        min-width: 400px;
+    }
+
+    
+.header-middle nav div a{
+    font-size: 12px;
+    text-decoration: none;
+    padding: 20px 10px;
+    
+
+}
+
+
+}
+
+@media screen and (max-width: 1310px) {
+    
+    .header-middle{
+        visibility: hidden;
+    }
+    
+    .hamberger, .mobile-menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px){
+ 
+    p, li{
+        font-size: 0.9em;
+    }
+    
+    .main-img h1{
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    
+    .main-content {
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        width: 90%; 
+        max-width: 700px; 
+        min-width: auto; 
+    }
+
+
+}
+
+
+/* ========================= ALL MEDIA QUERIES ============================= */
+
+@media screen and (max-width: 770px) {
+    
+
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer-right{
+        justify-content: space-evenly
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .footer-left{
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+
+    .main-content{
+        text-align: justify;
+    }
+
+    .main-content h2{
+        font-size: 17px;
+    }
+
+    .headline-card h1{
+        text-align: left;
+    }
+
+    .header-left p{
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+  
+    footer p{
+        font-size: 10px;
+        justify-content: center;
+    }
+    
+    .footer-left{
+        margin-left: 0px;
+    }
+}
+
+
+
+
+html {
+    animation: fadeIn .5s ease-in; 
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-left img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+@keyframes LogoRoll {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

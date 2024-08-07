@@ -1,0 +1,115 @@
+/* The Branch Layout */
+
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    /* margin-top: 100px; */
+}
+
+.topic{
+    display: flex;
+    justify-content: center;
+    /* text-decoration: underline #135D66 ; */
+
+}
+
+.branch-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.branch-card div h1{
+    text-align: center;
+}
+
+.sub-img{
+    height: 400px;
+}
+
+.sub-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.branch-card p {
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+.table-container {
+    /* overflow-x: scroll; */
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* Tickle */
+
+/* Table text color */
+table td, table th {
+    /* color: #FFFFFF; */
+    padding: 8px; 
+    border: 1px solid #ddd; 
+}
+
+
+
+.table-container table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #455A64;
+    color: #E0E0E0;
+    
+}
+
+.table-container table th {
+    background-color: #37474F;
+    color: #81D4FA;
+    font-weight: 400;
+}
+
+.table-container table tr:hover {
+    background-color: #263238;
+}
+
+
+@media screen and (max-width: 1440px){
+ 
+    .main-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+  .main-grid{
+    grid-template-columns: 1fr;
+  }
+  
+  .main-content{
+      text-align: justify;
+  }
+
+  .main-content h2{
+      font-size: 17px;
+  }
+
+  .table-container {
+    overflow-x: scroll; 
+    }
+
+}

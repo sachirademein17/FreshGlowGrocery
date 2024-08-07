@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+body {
+    background-color: #121212;    
+}
+
+p, li, a {
+    font-family: Lato, "Open Sans";
+    color: #E0E0E0;
+}
+
+h1, h2, h3 {
+    font-family: Montserrat, Raleway;
+    color: #81D4FA;
+}
+
+button {
+    background-color: #0288D1;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background-color: #0277BD;
+}
+
+label {
+    font-family: Lato, "Open Sans";
+    color: #E0E0E0;
+}
+
+header {
+    background-color: #37474F; 
+}
+
+.home a:hover,
+.aboutUs a:hover,
+.dairy a:hover,
+.vegetables a:hover,
+.cosmetics a:hover,
+.orders a:hover,
+.loyaltyReg a:hover {
+    box-shadow: 0px 4px 0px #B3E5FC;
+    color: #B3E5FC;
+}
+
+.header-middle nav div a {
+    color: #81D4FA;
+    font-family: Rubik;
+}
+
+.headline-card {
+    background-color: #1E1E1E;
+}
+
+.card {
+    background-color: #37474F;
+}
+
+footer {
+    background-color: #37474F; 
+}
+
+.para-card {
+    background-color: #1E1E1E;
+}
+
+.header-left p {
+    color: #81D4FA;
+}
+
+form {
+    padding: 50px;
+    margin: 10px; 
+    background-color: #263238;
+}
+
+.table-container table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #455A64;
+    color: #E0E0E0;
+    
+}
+
+.table-container table th {
+    background-color: #37474F;
+    color: #81D4FA;
+}
+
+.table-container table tr:hover {
+    background-color: #263238;
+}
+
+.hamberger{ 
+    background-color: #81D4FA;
+}
+
+
+.hamberger::after,
+.hamberger::before{
+    background-color: #81D4FA;
+}
+
+.mobile-menu {
+    background-color: #37474F;
+}
+
+.mobile-menu a{
+    color: #81D4FA;
+}
+
+*{
+    transition: all .5s;
+}

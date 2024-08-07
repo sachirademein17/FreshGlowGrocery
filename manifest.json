@@ -1,0 +1,87 @@
+{
+    "short_name": "Fresh Glow",
+    "name": "Fresh Glow Grocery",
+    "description": "A convenient grocery shopping experience.",
+    "start_url": "/index.html",
+    "background_color": "#E3FEF7",
+    "theme_color": "#E3FEF7",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "Icons/maskable_icon.png",
+        "type": "image/png",
+        "sizes": "1024x1024",
+        "purpose": "maskable"
+      },
+      {
+        "src": "Icons/maskable_icon_x512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+      },
+      {
+        "src": "Icons/maskable_icon_x192.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+      },
+      {
+        "src": "Icons/maskable_icon_x128.png",
+        "type": "image/png",
+        "sizes": "256x256",
+        "purpose": "maskable"
+      },
+      {
+        "src": "Icons/maskable_icon_x96.png",
+        "type": "image/png",
+        "sizes": "96x96",
+        "purpose": "maskable"
+      },
+      {
+        "src": "Icons/maskable_icon_x72.png",
+        "type": "image/png",
+        "sizes": "72x72",
+        "purpose": "maskable"
+      },
+      {
+        "src": "Icons/maskable_icon_x48.png",
+        "type": "image/png",
+        "sizes": "48x48",
+        "purpose": "maskable"
+      },
+      {
+        "src": "Icons/maskable_icon_x144.png",
+        "type": "image/png",
+        "sizes": "144x144",
+        "purpose": "any"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Shop",
+        "short_name": "Shop",
+        "description": "Start shopping for groceries.",
+        "url": "/index.html",
+        "icons": [
+          {
+            "src": "Icons/fresh-glow-grocery64px.jpeg",
+            "sizes": "64x64",
+            "type": "image/jpeg"
+          }
+        ]
+      }
+    ],
+    "prefer_related_applications": false,
+    "categories": ["shopping", "groceries"],
+    "dir": "ltr",
+    "scope": "/",
+    "protocol_handlers": [
+      {
+        "protocol": "web+freshglow",
+        "url": "/?freshglow=%s"
+      }
+    ],
+    "display_override": ["standalone", "fullscreen"]
+  }
+  
